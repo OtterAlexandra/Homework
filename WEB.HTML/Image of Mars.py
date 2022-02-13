@@ -38,7 +38,7 @@ def image():
                   </head>
                   <body>
                     <h1>Жди нас, Марс!</h1>
-                    <img src="static/image_of_mars.jpg">
+                    <img src="static/img/image_of_mars.jpg">
                     </br>Вот она, хорошая фотка марса
                   </body>
                 </html>'''
