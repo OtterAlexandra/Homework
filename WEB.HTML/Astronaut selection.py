@@ -24,13 +24,13 @@ def form_sample():
                             на участие в миссии
                             <div>
                                 <form class="login_form" method="post">
-                                    <p><input maxlength="30" value="Surname"></p>
-                                    <p><input maxlength="30" value="Name"></p>
+                                    <p><input maxlength="30" name="surname" 'value="Введите фамилию"></p>
+                                    <p><input maxlength="30" name="name" value="Введите имя"></p>
                                     <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Введите адрес почты" name="email">
                                     
                                     <div class="form-group">
                                         <label for="classSelect">Какое у вас образование?</label>
-                                        <select class="form-control" id="classSelect" name="class">
+                                        <select class="form-control" id="classSelect" name="education">
                                           <option>начальное</option>
                                           <option>среднее</option>
                                           <option>высшее</option>
@@ -39,17 +39,17 @@ def form_sample():
 
                                     <div>
                                        <p>В каких годах произошли самые известные извержения вулкана Кракатау?</p>
-                                       <p><input type="checkbox" name="a" value="инженер-исследователь"> инженер-исследователь</p>
-                                       <p><input type="checkbox" name="a" value="пилот"> пилот</p>
-                                       <p><input type="checkbox" name="a" value="строитель"> строитель</p>
-                                       <p><input type="checkbox" name="a" value="экзобиолог"> экзобиолог</p>
-                                       <p><input type="checkbox" name="a" value="врач"> врач</p>
-                                       <p><input type="checkbox" name="a" value="инженер по терраформированию"> инженер по терраформированию</p>
-                                       <p><input type="checkbox" name="a" value="климатолог"> климатолог</p>
-                                       <p><input type="checkbox" name="a" value="специалист по радиационной защите"> специалист по радиационной защите</p>
-                                       <p><input type="checkbox" name="a" value="астрогеолог"> астрогеолог</p>
-                                       <p><input type="checkbox" name="a" value="гляциолог"> гляциолог</p>
-                                       <p><input type="checkbox" name="a" value="инженер жизнеобеспечения"> инженер жизнеобеспечения</p>
+                                       <p><input type="checkbox" name="profession" value="инженер-исследователь"> инженер-исследователь</p>
+                                       <p><input type="checkbox" name="profession" value="пилот"> пилот</p>
+                                       <p><input type="checkbox" name="profession" value="строитель"> строитель</p>
+                                       <p><input type="checkbox" name="profession" value="экзобиолог"> экзобиолог</p>
+                                       <p><input type="checkbox" name="profession" value="врач"> врач</p>
+                                       <p><input type="checkbox" name="profession" value="инженер по терраформированию"> инженер по терраформированию</p>
+                                       <p><input type="checkbox" name="profession" value="климатолог"> климатолог</p>
+                                       <p><input type="checkbox" name="profession" value="специалист по радиационной защите"> специалист по радиационной защите</p>
+                                       <p><input type="checkbox" name="profession" value="астрогеолог"> астрогеолог</p>
+                                       <p><input type="checkbox" name="profession" value="гляциолог"> гляциолог</p>
+                                       <p><input type="checkbox" name="profession" value="инженер жизнеобеспечения"> инженер жизнеобеспечения</p>
                                       <div>
 
                                     <div class="form-group">
@@ -93,7 +93,7 @@ def form_sample():
         print(request.form['name'])
         print(request.form['email'])
         print(request.form['education'])
-        # print(request.form['profession'])
+        print(request.form['profession'])
         print(request.form['sex'])
         print(request.form['about'])
         print(request.form['file'])
