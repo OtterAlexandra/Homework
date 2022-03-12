@@ -33,9 +33,19 @@ user2.speciality = 'doctor-surgeon'
 user2.address = 'module_2'
 user2.email = 'doc_for_you@mars.org'
 
+user3 = User()
+user3.surname = 'Niki'
+user3.name = 'Forbs'
+user3.age = 20
+user3.position = 'system administrator'
+user3.speciality = 'head of the management department'
+user3.address = 'module_3'
+user3.email = 'mister_admini@mars.org'
+
 db_sess = db_session.create_session()
 db_sess.add(user)
 db_sess.add(user1)
 db_sess.add(user2)
+db_sess.add(user3)
 db_sess.commit()
 # app.run()
