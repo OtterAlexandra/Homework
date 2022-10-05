@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Анкета</title>
-</head>
-<body>
-    <h1>Миссия Колонизация Марса</h1>
-    <h4>И на Марсе будут яблони цвести!</h4>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block content %}
+  Фамилия: {{person['surname']}}
+  Имя: {{person['name']}}
+  Образование: {{person['education']}}
+  Профессия: {{person['profession']}}
+  Пол: {{person.sex]}}
+  Мотивация: {{person['motivation']}}
+  Готовы остаться на Марсе? {{person['ready']}}
+{% endblock %}
